@@ -52,3 +52,27 @@ You should also have basic knowledge of **Git** and **GitHub** for managing the 
 
    ```bash
    git clone https://github.com/mountzou/react-calculator-vat.git
+
+2. Navigate into the project directory:
+    ```bash
+    cd react-calculator-vat
+
+3. Install the required dependencies:
+    ```bash
+    npm install
+
+4. Start the development server:
+    ```bash
+    npm start
+
+5. Open your browser and go to http://localhost:3000 to view the application.
+
+### Usage
+
+1. Input a value in either the "Τιμή με ΦΠΑ" (Price with VAT) field or the "Τιμή χωρίς ΦΠΑ" (Price without VAT) field.
+
+2. Select a VAT rate (Συντελεστής ΦΠΑ) from the dropdown (24%, 13%, or 6%).
+
+3. The VAT value will be calculated automatically, and the other price field will be updated accordingly.
+
+4. You can switch between input fields, and the app will calculate the result dynamically.
