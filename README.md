@@ -76,3 +76,58 @@ You should also have basic knowledge of **Git** and **GitHub** for managing the 
 3. The VAT value will be calculated automatically, and the other price field will be updated accordingly.
 
 4. You can switch between input fields, and the app will calculate the result dynamically.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in interactive watch mode.\
+Use this to run unit tests written for the project.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It bundles React in production mode and optimizes the build for best performance.
+
+### `npm run lint`
+
+Runs the linter to check for syntax and formatting issues.
+
+## File Structure
+
+Here’s a brief look at the project’s structure:
+
+## Contributing
+
+If you'd like to contribute to the project, please follow these steps:
+
+1. **Fork** the repository on GitHub.
+2. **Clone** your forked repository to your local machine.
+3. **Create a new branch** for your feature or bugfix:
+    ```bash
+   git checkout -b feature/my-new-feature
+4. **Commit your changes** with clear messages:
+   ```bash
+   git commit -m "Add new feature: VAT calculation method"
+5. **Push** your changes to your forked repository:
+   ```bash
+   git push origin feature/my-new-feature
+6. Submit a **Pull Request** on the original repository.
+
+### Reporting Bugs
+
+If you find any bugs or issues, please feel free to open an [issue on GitHub](https://github.com/mountzou/react-calculator-vat/issues).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
