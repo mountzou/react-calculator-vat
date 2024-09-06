@@ -1,25 +1,24 @@
 import React from 'react';
+import { Form, Row, Col } from 'react-bootstrap';
 
 function VATSelector({ value, onChange }) {
   return (
-    <div className="row justify-content-center py-2">
-      <div className="col-8 col-md-4">
-        <div className="form-group">
-          <label htmlFor="vat-category">Συντελεστής ΦΠΑ:</label>
-          <select
-            id="vat-category"
-            name="vat-category"
-            className="form-control"
+    <Row className="justify-content-center py-2">
+      <Col xs={8} md={4}>
+        <Form.Group controlId="vat-category">
+          <Form.Label>Συντελεστής ΦΠΑ:</Form.Label>
+          <Form.Select
             value={value}
             onChange={onChange}
+            className="form-control"
           >
             <option value="6">6%</option>
             <option value="13">13%</option>
             <option value="24">24%</option>
-          </select>
-        </div>
-      </div>
-    </div>
+          </Form.Select>
+        </Form.Group>
+      </Col>
+    </Row>
   );
 }
 

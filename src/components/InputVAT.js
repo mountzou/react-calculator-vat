@@ -1,24 +1,21 @@
 import React from 'react';
+import { Form, Row, Col } from 'react-bootstrap';
 
-function VATInput({ label, id, value, onChange, disabled = false, step = "1" }) {
+function VATInput({ label, id, value, onChange, disabled = false }) {
   return (
-    <div className="row justify-content-center py-2">
-      <div className="col-8 col-md-4">
-        <div className="form-group">
-          <label htmlFor={id}>{label}</label>
-          <input
+    <Row className="justify-content-center py-2">
+      <Col xs={8} md={4}>
+        <Form.Group controlId={id}>
+          <Form.Label>{label}</Form.Label>
+          <Form.Control
             type="number"
-            id={id}
-            name={id}
             value={value}
             onChange={onChange}
-            className="form-control"
-            step={step}
             disabled={disabled}
           />
-        </div>
-      </div>
-    </div>
+        </Form.Group>
+      </Col>
+    </Row>
   );
 }
 

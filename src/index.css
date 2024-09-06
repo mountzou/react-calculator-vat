@@ -2,14 +2,11 @@
 
 :root {
     --font-family-primary: 'IBM Plex Sans', sans-serif;
-    --font-family-secondary: 'IBM Plex Mono', monospace;
 
-    --font-size-primary: 44px;
-    --font-size-secondary: 20px;
-    --font-size-form: 17px;
-    --font-size-navbrand: 16px;
-
-
+    --font-size-primary: 2rem;
+    --font-size-secondary: 0.95rem;
+    --font-size-form: 0.95rem;
+    --font-size-navbrand: 1rem;
 
     --font-weight-medium: 550;
     --font-weight-regular: 500;
@@ -28,39 +25,33 @@ html, body {
 body {
     background-color: var(--bs-grey);
     color: var(--bs-primary);
+    font-family: var(--font-family-primary);
     overscroll-behavior: none;
 }
 
 h1 {
     font-weight: var(--font-weight-medium) !important;
+    letter-spacing: -0.15rem;
 }
 
 p {
-    font-family: var(--font-family-secondary);
-    letter-spacing: -1.35px;
+    letter-spacing: -0.05rem;
 }
 
 label {
-    font-family: var(--font-family-secondary);
-    font-size: var(--font-size-form);
-    font-weight: var(--font-weight-medium) !important;
-    letter-spacing: -1px;
+    letter-spacing: -0.05rem;
 }
 
 .form-control {
-    font-family: var(--font-family-secondary);
-    font-size: var(--font-size-form);
-    letter-spacing: -1px;
+    letter-spacing: -0.05rem;
     background-color: transparent;
-    border: 1.8px solid var(--bs-secondary);
-    border-left: 4.8px solid var(--bs-secondary);
-    border-radius: 0;
-    box-shadow: none;
-    line-height: 28px;
+    border: 1px solid var(--bs-secondary);
+    border-left: 3px solid var(--bs-secondary);
+    border-radius: 5px;
+    line-height: 32px;
 }
 
 footer {
-    font-family: var(--font-family-secondary);
     letter-spacing: -0.5px;
 }
 
@@ -71,6 +62,16 @@ footer {
     width: 100%;
     background-color: var(--bs-primary);
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
   
 
 @media only screen and (max-width: 768px) {
@@ -78,4 +79,5 @@ footer {
         font-size: 18px !important;
     }
 }
+
   
